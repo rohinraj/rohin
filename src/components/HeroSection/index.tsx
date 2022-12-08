@@ -19,7 +19,7 @@ function HeroSection() {
         <div className={classNames.desc}>
           Tech Enthusiast.! Mechanical Design, Engineering Sciences and Software
           development are my fields of interest. Currently pursuing B.Tech
-          Mechanical Engineering and BSc Programming and Data Science.
+          Mechanical Engineering.
         </div>
         <a href="mailto:rohinsandro@gmail.com" className={classNames.btnHireMe}>
           Hire Me
