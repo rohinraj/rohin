@@ -5,7 +5,7 @@ import classNames from "./AboutExperienceAndEducation.module.scss";
 function AboutExperienceAndEducation(): JSX.Element {
   return (
     <div className={classNames.aboutExperienceAndEducation}>
-      <div className={classNames.title}>EDUCATION &amp; EXOERIENCE</div>
+      <div className={classNames.title}>EDUCATION &amp; EXPERIENCE</div>
       <div className={classNames.experience}>
         {MY_EXPERIENCE.map((experience, i) => (
           <div className={classNames.experienceCard} key={i}>

@@ -17,7 +17,7 @@ function HeroSection() {
           Rohin Raj
         </div>
         <div className={classNames.desc}>
-          Tech Enthusiast. Mechanical Design, Engineering Sciences and Software
+          Tech Enthusiast.! Mechanical Design, Engineering Sciences and Software
           development are my fields of interest. Currently pursuing B.Tech
           Mechanical Engineering and BSc Programming and Data Science.
         </div>

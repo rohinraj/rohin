@@ -79,6 +79,17 @@ function AboutSection(): JSX.Element {
                 <span>@rohinraj</span>
               </a>
             </div>
+            <div className={classNames.item}>
+              Twitter:&nbsp;&nbsp;
+              <wbr />
+              <a
+                href="https://twitter.com/rohinrajsb"
+                target="_blank"
+                rel="noreferrer"
+              > 
+                <span>@rohinrajsb</span>
+              </a>
+            </div>
           </div>
           <a
             className={classNames.button}
@@ -99,20 +110,20 @@ function AboutSection(): JSX.Element {
         </div>
         <div className={classNames.countCards}>
           <div className={classNames.card}>
-            <div className={classNames.count}>3</div>
-            <div className={classNames.label}>YEARS OF EXPERIENCE</div>
-          </div>
-          <div className={classNames.card}>
-            <div className={classNames.count}>80</div>
-            <div className={classNames.label}>Entho PROJECTS</div>
-          </div>
-          <div className={classNames.card}>
             <div className={classNames.count}>6</div>
-            <div className={classNames.label}>Vere PROJECTS</div>
+            <div className={classNames.label}>MONTHS OF EXPERIENCE</div>
+          </div>
+          <div className={classNames.card}>
+            <div className={classNames.count}>24</div>
+            <div className={classNames.label}>PROJECTS</div>
+          </div>
+          <div className={classNames.card}>
+            <div className={classNames.count}>7</div>
+            <div className={classNames.label}>VOLUNTEERING POSITIONS</div>
           </div>
           <div className={classNames.card}>
             <div className={classNames.count}>3</div>
-            <div className={classNames.label}>Etho Certificates</div>
+            <div className={classNames.label}>CERTIFICATIONS</div>
           </div>
         </div>
       </div>

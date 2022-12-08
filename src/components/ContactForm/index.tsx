@@ -28,7 +28,7 @@ function ContactForm(): JSX.Element {
     };
     axios
       .post(
-        "https://docs.google.com/forms/u/3/d/e/1FAIpQLSeQnSMoNuU80uKBYG-7wYyeAnSRQsQVukwxJKX0f-M6vS1oQg/formResponse",
+        "https://docs.google.com/forms/d/e/1FAIpQLSfxjdqa0adqk_g6mkVeOQkB7l_mBosJoe4_LC8pD9MNavuHyg/viewform",
         formData,
         config
       )

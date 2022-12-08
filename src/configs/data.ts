@@ -1,83 +1,87 @@
 export const MY_SKILLS = [
   {
-    language: "React.js (JS/TS)",
+    language: "SolidWorks",
+    percent: 85,
+  },
+  {
+    language: "Ansys",
+    percent: 75,
+  },
+  {
+    language: "Mechanical Design",
+    percent: 70,
+  },
+
+  {
+    language: "Problem Solving",
     percent: 90,
   },
   {
-    language: "Next.js (JS/TS)",
+    language: "Team Management",
     percent: 90,
   },
   {
-    language: "React Native (JS/TS)",
-    percent: 70,
+    language: "Project Management",
+    percent: 80,
   },
   {
-    language: "Node.js (JS/TS)",
-    percent: 70,
-  },
-  // {
-  //   language: "Firebase",
-  //   percent: 90,
-  // },
-  {
-    language: "MongoDB",
-    percent: 65,
-  },
-  {
-    language: "Android SDK (Kotlin)",
-    percent: 70,
-  },
-  {
-    language: "Flutter",
-    percent: 50,
+    language: "Git and Github",
+    percent: 80,
   },
   {
     language: "Python",
-    percent: 40,
+    percent: 60,
   },
 ];
 
 export const MY_EXPERIENCE = [
   {
     icon: "/assets/icons/work.png",
-    time: "Jan 2020 - Present",
-    subTitle: "Nvest Campus",
-    title: "Senior Front-End Developer",
-    desc: "- React.js,Next.js and React Native",
+    time: "Jan 2022 - Present",
+    subTitle: "IEEE LINK | IEEE MALABAR HUB",
+    title: "Technical Coordinator",
+    desc: "- Problem Solving, Strategic Planing, Team Management, Technical Support",
   },
   {
     icon: "/assets/icons/work.png",
-    time: "Nov 2018 - Jan 2020",
-    subTitle: "Stackatech Info Labs",
-    title: "Full-Stack Developer",
-    desc: "- React.js,Next.js,Node.js,Firebase and Android SDK",
+    time: "May 2022 - Jul 2022",
+    subTitle: "Indian Institute of Technology, Gandhinagar",
+    title: "Research Intern",
+    desc: "- Research, Creative Concept Design, Design for Manufacturing, Creative Problem Solving",
   },
   {
     icon: "/assets/icons/work.png",
-    time: "Jun 2018 - Nov 2018",
-    subTitle: "AjwaStudio",
-    title: "Full-Stack Developer",
-    desc: "- Wordpress,Android SDK and Firebase",
+    time: "Aug 2021- Sep 2021",
+    subTitle: "FMAE Hyderabad",
+    title: "Design and Manufacturing Intern",
+    desc: "- Built a racing electric All-Terrain Vehicle under supervision of veterans in the field at the FMAE Motopark, Hyderabad",
   },
   {
     icon: "/assets/icons/education.png",
-    time: "Jun 2015 - Apr 2018",
-    subTitle: "Kerala Government Polytechnic College,Kozhikode",
-    title: "Diploma In Computer Engineering",
-    desc: "- Passed out with CGPA of 7.3",
+    time: "Jul 2019 - Present",
+    subTitle: "Government Engineerng College,Wayanad",
+    title: "B.Tech In Mechanical Engineering",
+    desc: "- Pursuing.",
   },
   {
     icon: "/assets/icons/education.png",
-    time: "Jul 2013 - Apr 2015",
+    time: "Dec 2021 - Present",
+    subTitle: "Indian Institute of Technology,Madras",
+    title: "B.Sc Programming and Data Science",
+    desc: "- Pursuing.",
+  },
+  {
+    icon: "/assets/icons/education.png",
+    time: "Jul 2017 - Apr 2019",
     subTitle: "Government Higher Secondary School, Payyoli",
     title: "Higher Secondary In Computer Science",
-    desc: "- Passed out with CGPA of 7.5",
+    desc: "- Course completed with a score of 85%.",
   },
   {
     icon: "/assets/icons/education.png",
-    time: "Jun 2012 - Mar 2013",
+    time: "Jun 2014 - Mar 2017",
     subTitle: "Govt. Technical High School, Payyoli",
     title: "Technical High School Leaving Certificate",
-    desc: "- Passed out with CGPA of 8.5",
+    desc: "- Course completed with a score of 100%",
   },
 ];
