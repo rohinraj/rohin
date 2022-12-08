@@ -1,0 +1,214 @@
+@import "../../styles/mixin";
+@import "../../styles/colors";
+
+.AboutSection {
+  flex: 0 0 100%;
+  padding: 0 10%;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  .title {
+    margin: 0 auto;
+    font-size: 120px;
+    font-family: Merriweather Sans;
+    line-height: 1;
+    position: relative;
+    display: flex;
+    color: rgba(30, 37, 48, 0.07);
+    margin-bottom: 2rem;
+    .main {
+      z-index: 1;
+    }
+    .inTitle {
+      z-index: 0;
+      position: absolute;
+      font-size: 50px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      color: $text-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+  .infos {
+    display: flex;
+    padding: 0 5%;
+    padding-bottom: 90px;
+    .personalInfo {
+      flex: 0 0 50%;
+      display: flex;
+      flex-direction: column;
+      .personalTitle {
+        font-size: 28px;
+        font-weight: 600;
+      }
+      .details {
+        display: flex;
+        flex-wrap: wrap;
+        .item {
+          flex: 0 0 50%;
+          font-size: 18px;
+          font-weight: 300;
+          margin: 20px 0;
+          a,
+          span {
+            color: $text-color;
+            font-weight: 600;
+          }
+        }
+      }
+      .button {
+        margin-top: 30px;
+        height: 60px;
+        border-radius: 30px;
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        border: 1px solid $primary-color;
+        transition: all 400ms ease;
+        .btnText {
+          transition: all 400ms ease;
+          color: $primary-color;
+          font-size: 20px;
+          font-weight: 500;
+        }
+        .btnIcon {
+          height: 60px;
+          width: 60px;
+          background: $primary-color;
+          padding: 20px;
+          border-radius: 50%;
+          margin-left: 20px;
+        }
+        &:hover {
+          background-color: $primary-color;
+          .btnText {
+            color: white;
+          }
+        }
+      }
+    }
+    .countCards {
+      width: 0;
+      flex: 0 0 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .card {
+        flex: 0 0 46%;
+        max-width: 46%;
+        margin: 10px 1%;
+        height: 40%;
+        border: 1px solid $border-color;
+        padding: 30px 8%;
+        display: flex;
+        flex-direction: column;
+        .count {
+          font-size: 60px;
+          line-height: 1;
+          font-weight: 600;
+          position: relative;
+          color: $primary-color;
+          &:after {
+            content: "+";
+            position: absolute;
+            right: -24 px;
+            font-size: 35px;
+            font-weight: 300;
+            top: 2 px;
+          }
+        }
+        .label {
+          padding-left: 25%;
+          font-size: 18px;
+          position: relative;
+          &::after {
+            content: "";
+            height: 2px;
+            width: 19%;
+            background-color: $border-color;
+            position: absolute;
+            left: 0;
+            top: 13px;
+          }
+        }
+      }
+    }
+  }
+  @include mdportrait {
+    padding: 0 5%;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    .title {
+      font-size: 65px;
+      .inTitle {
+        font-size: 30px;
+      }
+    }
+    .infos {
+      flex-direction: column;
+      .personalInfo {
+        flex: unset;
+        .personalTitle {
+          font-size: 20px;
+        }
+        .details {
+          .item {
+            flex: 0 0 80%;
+            font-size: 16px;
+            a,
+            span {
+              display: block;
+            }
+          }
+        }
+        .button {
+          margin-top: 30px;
+          height: 50px;
+          border-radius: 25px;
+          padding-left: 20px;
+          .btnText {
+            font-size: 15px;
+          }
+          .btnIcon {
+            height: 50px;
+            width: 50px;
+            padding: 15px;
+            margin-left: 5px;
+          }
+        }
+      }
+      .countCards {
+        margin-top: 30px;
+        width: 100%;
+        flex: unset;
+        justify-content: space-between;
+        .card {
+          padding: 20px 8%;
+          .count {
+            font-size: 40px;
+            &:after {
+              font-size: 25px;
+            }
+          }
+          .label {
+            padding-left: 0;
+            font-size: 12px;
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

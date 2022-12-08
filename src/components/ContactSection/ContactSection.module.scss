@@ -1,0 +1,116 @@
+@import "../../styles/mixin";
+@import "../../styles/colors";
+
+.ContactSection {
+  flex: 0 0 100%;
+  padding: 0 10%;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  .title {
+    margin: 0 auto;
+    font-size: 120px;
+    font-family: Merriweather Sans;
+    line-height: 1;
+    position: relative;
+    display: flex;
+    color: rgba(30, 37, 48, 0.07);
+    margin-bottom: 2rem;
+    .main {
+      z-index: 1;
+    }
+    .inTitle {
+      z-index: 0;
+      position: absolute;
+      font-size: 50px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      color: $text-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+  .contents {
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    .contactDetail {
+      flex: 0 0 35%;
+      .titleIn {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .desc {
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 300;
+      }
+      .item {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        display: flex;
+        .icon {
+          width: 40px;
+          margin-right: 20px;
+        }
+        .texts {
+          .label {
+            line-height: 1;
+            font-size: 16px;
+            font-weight: 300;
+          }
+          .value {
+            margin-top: 4px;
+            font-weight: 500;
+            color: $text-color;
+          }
+        }
+      }
+    }
+  }
+
+  @include mdportrait {
+    padding: 0 5%;
+    padding-top: 90px;
+    .title {
+      font-size: 65px;
+      .inTitle {
+        font-size: 30px;
+      }
+    }
+    .contents {
+      flex-direction: column;
+      padding: 0 8%;
+      .contactDetail {
+        flex: unset;
+        .titleIn {
+          font-size: 20px;
+        }
+        .desc {
+          font-size: 14px;
+        }
+        .item {
+          .icon {
+            width: 30px;
+            margin-right: 15px;
+          }
+          .texts {
+            .label {
+              font-size: 14px;
+            }
+            .value {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import "../../styles/mixin";
+@import "../../styles/colors";
+
+.aboutExperienceAndEducation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  .title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
+  .experience {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-between;
+    .experienceCard {
+      flex: 0 0 48%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 90px;
+      padding-left: 80px;
+      padding-bottom: 10px;
+      position: relative;
+      line-height: 1;
+      .icon {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 20px;
+          width: auto;
+          object-fit: contain;
+          filter: brightness(0) invert(1);
+        }
+      }
+      .time {
+        margin-top: 6px;
+        background: rgb(230, 230, 230);
+        width: fit-content;
+        height: 24px;
+        font-size: 16px;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8px;
+        border-radius: 10px;
+      }
+      .position {
+        font-size: 25px;
+        font-weight: 500;
+        margin: 12px 0;
+      }
+      .company {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 40px;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: $border-color;
+      }
+    }
+  }
+  @include mdportrait {
+    .title {
+      font-size: 30px;
+    }
+    .experience {
+      .experienceCard {
+        flex: 0 0 100%;
+      }
+    }
+  }
+}
